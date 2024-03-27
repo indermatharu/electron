@@ -1,0 +1,46 @@
+{
+  "name": "ReadIt",
+  "version": "1.0.0",
+  "description": "The app will help you to bookmark url's for reading later.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron .",
+    "reset": "git reset --hard",
+    "build": "electron-builder --help"
+  },
+  "repository": "https://github.com/stackacademytv/master-electron",
+  "homepage": "https://github.com/stackacademytv/master-electron",
+  "keywords": [
+    "Electron",
+    "Master Electron",
+    "demo"
+  ],
+  "author": "Inder Matharu",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^11.0.1",
+    "electron-builder": "^24.13.3",
+    "nodemon": "^2.0.0"
+  },
+  "dependencies": {
+    "electron-window-state": "^5.0.3"
+  },
+  "buiid": {
+    "appId": "com.indermatharu.readit",
+    "copyright": "Inder Matharu",
+    "mac": {
+      "category": "public.app-category.entertainment",
+      "target": "dmg"
+    },
+    "win": {
+      "target": "zip",
+      "certificateFile": "private/indermatharu.pfx",
+      "certicatePassword": "",
+      "verifyUpdateCodeSignature": false
+    },
+    "linux": {
+      "category": "Utility"
+    }
+  }
+}
